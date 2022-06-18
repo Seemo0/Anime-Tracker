@@ -61,10 +61,12 @@ onMounted(() => {
   <main>
       <h1>My Anime Tracker</h1>
 
+
       <form @submit.prevent="searchAnime">
         <input type="text" placeholder="Search for an anime..." v-model="query" @input="handleInput" />
         <button type="submit" class="button">Search</button>
       </form>
+
 
       <div class="results" v-if="search_results.length > 0">
 			<div class="result" v-for="anime in search_results" >
