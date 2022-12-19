@@ -100,7 +100,6 @@ onMounted(() => {
   
 </template>
 
-
 <style>
 
 * {
